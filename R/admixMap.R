@@ -109,6 +109,7 @@ admixMap <- function(admixDataList,
   iterate <- TRUE
   while (iterate) {
 
+    chr <- getChromosome(admixDataList[[1]])
   res <- matrix(NA, nrow=length(chr), ncol=length(nv), dimnames=list(NULL, nv))
     
   #if(verbose) message("Beginning Calculations...")
@@ -122,7 +123,6 @@ admixMap <- function(admixDataList,
     # ancestral frequency
     freq <- 0.5*colMeans(local, dims=1, na.rm=T) # matrix:  rows are SNPs, columns are ancestries
     # for X chr
-    chr <- getChromosome(admixDataList[[1]])
     if(XchromCode(admixDataList[[1]]) %in% chr){
       # which are on X chr
       Xidx <- chr == XchromCode(admixDataList[[1]])
