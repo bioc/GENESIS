@@ -3,7 +3,7 @@ Type: Package
 Title: GENetic EStimation and Inference in Structured samples
         (GENESIS): Statistical methods for analyzing genetic data from
         samples with population structure and/or relatedness
-Version: 2.41.0
+Version: 2.42.0
 Date: 2025-01-31
 Authors@R: c(
   person(c("Matthew", "P."), "Conomos", role = c("aut")),
